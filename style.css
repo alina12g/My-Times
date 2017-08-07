@@ -6,11 +6,11 @@
 	flex-direction: column;
   z-index:0;
   margin-top: 90px;
+	border-top: 1px solid black;
 }
 .header{
 	display: flex;
 	position: fixed;
-	overflow: hidden;
 	top: 0px;
 	font-family: Verdana;
 	font-size: 14px;
@@ -24,7 +24,7 @@
 }
 .logo{
 	color: MediumAquamarine;
-	display: inline-flex;
+	display: flex; /*item flex of header*/
 	margin-left: 10px;
 }
 .logo p{
@@ -37,13 +37,14 @@ nav span{
 		display: inline-flex;
 		justify-content: space-between;
 	}
-	nav a{
+nav a{
 		color: black;
 		padding: 10px 15px;
 	}
 .content{
     display: flex;
     z-index: 0;
+		justify-content: center;
 }
 .column{
     display: flex;
@@ -68,6 +69,8 @@ nav span{
 	display: flex;
 	flex-direction: column;
   padding: 10px;
+	margin: 0px;
+	flex-wrap: wrap;
 }
 #main-story{
 	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
@@ -98,6 +101,7 @@ nav span{
 .text-img #main-title{
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		font-size: 40px;
 		color: white;
 		font-family: Georgia;
@@ -116,4 +120,57 @@ nav span{
 	flex-direction: column;
 	width: 310px;
 	padding: 20px;
+}
+#news-list{
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.small span{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin:0;
+	border-bottom: 1px black solid;
+	padding: 15px;
+	background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+}
+#item1{
+	width: 100%;
+	margin-left: 0;
+}
+footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: MediumAquamarine;
+	margin: auto;
+	font-family: Verdana;
+	font-size: 12px;
+	height: 280px;
+	width: 100%;
+}
+#logo-title{
+	display: inline-flex
+	font-family: Georgia;
+	font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+.container-nav{
+	display: block;
+	justify-content: center;
+}
+.container-nav  a {
+	padding: 0 10px;
+	color: black;
+}
+
+#copy-rights{
+	padding-top: 20px;
 }
