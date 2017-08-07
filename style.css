@@ -2,10 +2,10 @@
 /* CSS Document */
 
 .main{
-	display: block;
+	display: flex;
 	flex-direction: column;
-    z-index:0;
-    margin-top: 90px;
+  z-index:0;
+  margin-top: 90px;
 }
 .header{
 	display: flex;
@@ -18,9 +18,9 @@
 	width: 100%;
 	align-items: center;
 	justify-content: space-between;
-    z-index: 20;
-    height: 90px;
-    background-color: white;
+  z-index: 20;
+  height: 90px;
+  background-color: white;
 }
 .logo{
 	color: MediumAquamarine;
@@ -33,24 +33,19 @@
 	display: inline-block;
 	padding-top: 10px;
 }
-/*list items form menu*/
-.header li{
-	display: inline-block;
-	margin-right: auto;
-}
-.header li a{
-	display: inline-block;
-	color: black;
-	padding: 10px 15px;
-}
+nav span{
+		display: inline-flex;
+		justify-content: space-between;
+	}
+	nav a{
+		color: black;
+		padding: 10px 15px;
+	}
 .content{
-    display: block;
-    position: relative;
+    display: flex;
     z-index: 0;
-    justify-content: space-between;
 }
 .column{
-    border: 1px solid pink;
     display: flex;
     margin-top: 0px;
     z-index: 0;
@@ -60,6 +55,7 @@
 	display: flex;
 	flex-direction: column;
   padding: 10px;
+
 }
 .medium{
   width: 300px;
