@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
-
+body{
+	margin: 0px;
+}
 .main{
 	display: flex;
 	flex-direction: column;
@@ -38,6 +40,7 @@ nav span{
 		justify-content: space-between;
 	}
 nav a{
+	display: inline-flex;
 		color: black;
 		padding: 10px 15px;
 	}
@@ -91,6 +94,9 @@ nav a{
 		color: white;
 		font-family: Georgia;
 		height: 300px;
+}
+h2{
+	font-size: 30px;
 }
 .main-image{
     font-family: Georgia;
@@ -156,7 +162,7 @@ footer{
 	width: 100%;
 }
 #logo-title{
-	display: inline-flex
+	display: inline-flex;
 	font-family: Georgia;
 	font-size: 16px;
   font-weight: bold;
@@ -174,3 +180,4 @@ footer{
 #copy-rights{
 	padding-top: 20px;
 }
+/* Have a nice day! */
